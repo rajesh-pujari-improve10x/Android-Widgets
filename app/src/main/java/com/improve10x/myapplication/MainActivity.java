@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         handleRatingBar();
         handleSeekBar();
         handleDatePicker();
+        handleTimePicker();
+        handleVerticalScrollView();
+        handleHorizontalScrollView();
     }
 
     private void handleAddition() {
@@ -80,6 +83,27 @@ public class MainActivity extends AppCompatActivity {
     private void handleDatePicker() {
         binding.datePickerBtn.setOnClickListener(view -> {
             intent = new Intent(this, DatePickerActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleTimePicker() {
+        binding.timePickerBtn.setOnClickListener(view -> {
+            intent = new Intent(this, TimePickerActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleVerticalScrollView() {
+        binding.verticalScrollViewBtn.setOnClickListener(view -> {
+            intent = new Intent(this, VerticalScrollViewActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleHorizontalScrollView() {
+        binding.horizontalScrollViewBtn.setOnClickListener(view -> {
+            intent = new Intent(this, HorizontalScrollViewActivity.class);
             startActivity(intent);
         });
     }
