@@ -45,4 +45,14 @@
         app:layout_constraintEnd_toEndOf="@+id/toggle_btn"
         app:layout_constraintStart_toStartOf="@+id/toggle_btn"
         app:layout_constraintTop_toBottomOf="@+id/toggle_btn" />
+
+    <Button
+        android:id="@+id/radio_btn_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Radio Button"
+        app:layout_constraintEnd_toEndOf="@+id/check_box_btn"
+        app:layout_constraintStart_toStartOf="@+id/check_box_btn"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

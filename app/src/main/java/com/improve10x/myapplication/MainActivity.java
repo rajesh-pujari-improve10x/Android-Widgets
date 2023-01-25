@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         handleCustomizeToast();
         handleToggle();
         handleCheckBox();
+        handleRadioButton();
     }
 
     private void handleAddition() {
@@ -47,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleCheckBox() {
         binding.checkBoxBtn.setOnClickListener(view -> {
             intent = new Intent(this, CheckBoxActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleRadioButton() {
+        binding.radioBtnRb.setOnClickListener(view -> {
+            intent = new Intent(this, RadioButtonActivity.class);
             startActivity(intent);
         });
     }
