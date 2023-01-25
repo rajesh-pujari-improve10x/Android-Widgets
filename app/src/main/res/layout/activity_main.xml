@@ -75,4 +75,14 @@
         app:layout_constraintEnd_toEndOf="@+id/rating_bar_btn"
         app:layout_constraintStart_toStartOf="@+id/rating_bar_btn"
         app:layout_constraintTop_toBottomOf="@+id/rating_bar_btn" />
+
+    <Button
+        android:id="@+id/date_picker_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Date Picker"
+        app:layout_constraintEnd_toEndOf="@+id/seek_bar_btn"
+        app:layout_constraintStart_toStartOf="@+id/seek_bar_btn"
+        app:layout_constraintTop_toBottomOf="@+id/seek_bar_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
