@@ -17,17 +17,22 @@ public class AddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityAddBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        handleAddBtn();
+        handleAdd();
     }
 
-    private void handleAddBtn() {
+    private void handleAdd() {
         binding.addBtn.setOnClickListener(view -> {
-            String num1 = binding.numberOneTxt.getText().toString();
-            String num2 = binding.numberTwoTxt.getText().toString();
-            int a = Integer.parseInt(num1);
-            int b = Integer.parseInt(num2);
-            int sum = a + b;
-            Toast.makeText(this, String.valueOf(sum), Toast.LENGTH_SHORT).show();
+            String number1 = binding.numberOneTxt.getText().toString();
+            String number2 = binding.numberTwoTxt.getText().toString();
+            String sum = add(number1, number2);
+            Toast.makeText(this, sum, Toast.LENGTH_SHORT).show();
         });
+    }
+
+    private String add(String num1, String num2) {
+        int a = Integer.parseInt(num1);
+        int b = Integer.parseInt(num2);
+        int sum = a + b;
+        return String.valueOf(sum);
     }
 }

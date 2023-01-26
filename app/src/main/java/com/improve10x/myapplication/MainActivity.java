@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         handleVerticalScrollView();
         handleHorizontalScrollView();
         handleListView();
+        handleCustomListView();
     }
 
     private void handleAddition() {
@@ -112,6 +113,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleListView() {
         binding.listViewBtn.setOnClickListener(view -> {
             intent = new Intent(this, ListViewActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleCustomListView() {
+        binding.customListViewBtn.setOnClickListener(view -> {
+            intent = new Intent(this, CustomListViewActivity.class);
             startActivity(intent);
         });
     }
