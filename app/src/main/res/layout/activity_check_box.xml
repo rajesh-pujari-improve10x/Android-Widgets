@@ -49,4 +49,13 @@
         app:layout_constraintEnd_toEndOf="@+id/burger_cb"
         app:layout_constraintStart_toStartOf="@+id/burger_cb"
         app:layout_constraintTop_toBottomOf="@+id/burger_cb" />
+
+    <TextView
+        android:id="@+id/toast_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/order_btn"
+        app:layout_constraintStart_toStartOf="@+id/order_btn"
+        app:layout_constraintTop_toBottomOf="@+id/order_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
