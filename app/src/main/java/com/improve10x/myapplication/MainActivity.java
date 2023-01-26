@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         handleTimePicker();
         handleVerticalScrollView();
         handleHorizontalScrollView();
+        handleListView();
     }
 
     private void handleAddition() {
@@ -104,6 +105,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleHorizontalScrollView() {
         binding.horizontalScrollViewBtn.setOnClickListener(view -> {
             intent = new Intent(this, HorizontalScrollViewActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleListView() {
+        binding.listViewBtn.setOnClickListener(view -> {
+            intent = new Intent(this, ListViewActivity.class);
             startActivity(intent);
         });
     }
