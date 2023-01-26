@@ -20,6 +20,10 @@ public class CustomizeToastActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityCustomizeToastBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        showCustomizeToast();
+    }
+
+    private void showCustomizeToast() {
         CustomizeToastItemBinding customizeToastItemBinding = CustomizeToastItemBinding.inflate(getLayoutInflater());
         Toast toast = new Toast(this);
         toast.setDuration(Toast.LENGTH_SHORT);
