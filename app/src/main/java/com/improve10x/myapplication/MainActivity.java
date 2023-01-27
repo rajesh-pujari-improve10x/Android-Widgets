@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         handleListView();
         handleCustomListView();
         handleImageSwitcher();
+        handleImageSlider();
     }
 
     private void handleAddition() {
@@ -128,6 +129,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleImageSwitcher() {
         binding.imageSwitcherBtn.setOnClickListener(view -> {
             intent = new Intent(this, ImageSwitcherActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleImageSlider() {
+        binding.imageSliderBtn.setOnClickListener(view -> {
+            intent = new Intent(this, ImageSliderActivity.class);
             startActivity(intent);
         });
     }
