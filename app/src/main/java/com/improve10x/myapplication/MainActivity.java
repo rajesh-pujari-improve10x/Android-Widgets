@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         handleHorizontalScrollView();
         handleListView();
         handleCustomListView();
+        handleImageSwitcher();
     }
 
     private void handleAddition() {
@@ -120,6 +121,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleCustomListView() {
         binding.customListViewBtn.setOnClickListener(view -> {
             intent = new Intent(this, CustomListViewActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleImageSwitcher() {
+        binding.imageSwitcherBtn.setOnClickListener(view -> {
+            intent = new Intent(this, ImageSwitcherActivity.class);
             startActivity(intent);
         });
     }

@@ -61,11 +61,9 @@ public class CustomListViewActivity extends AppCompatActivity {
         if(position == 0) {
             Toast.makeText(getApplicationContext(),"Place Your First Option Code",Toast.LENGTH_SHORT).show();
         }
-
         else if(position == 1) {
             Toast.makeText(getApplicationContext(),"Place Your Second Option Code",Toast.LENGTH_SHORT).show();
         }
-
         else if(position == 2) {
             Toast.makeText(getApplicationContext(),"Place Your Third Option Code",Toast.LENGTH_SHORT).show();
         }
