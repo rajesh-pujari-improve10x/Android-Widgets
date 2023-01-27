@@ -21,7 +21,6 @@ public class RadioButtonActivity extends AppCompatActivity {
 
     private void handleShowSelected() {
         binding.showSelectedBtn.setOnClickListener(view -> {
-            int selectedId = binding.radioGroupRg.getCheckedRadioButtonId();
             if (binding.maleRb.isChecked()) {
                 Toast.makeText(this, "Male", Toast.LENGTH_SHORT).show();
             } else if (binding.femaleRb.isChecked()){
