@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         handleCustomListView();
         handleImageSwitcher();
         handleImageSlider();
+        handleAlertDialog();
     }
 
     private void handleAddition() {
@@ -136,6 +137,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleImageSlider() {
         binding.imageSliderBtn.setOnClickListener(view -> {
             intent = new Intent(this, ImageSliderActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleAlertDialog() {
+        binding.alertDialogBtn.setOnClickListener(view -> {
+            intent = new Intent(this, AlertDialogBoxActivity.class);
             startActivity(intent);
         });
     }

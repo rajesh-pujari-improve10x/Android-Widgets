@@ -120,6 +120,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Image Slider" />
+
+            <Button
+                android:id="@+id/alert_dialog_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alert Dialog" />
         </LinearLayout>
     </ScrollView>
 
