@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         handleImageSlider();
         handleAlertDialog();
         handleProgressDialog();
+        handleWebView();
+        handleSpinner();
     }
 
     private void handleAddition() {
@@ -152,6 +154,20 @@ public class MainActivity extends AppCompatActivity {
     private void handleProgressDialog() {
         binding.progressDialogBtn.setOnClickListener(view -> {
             intent = new Intent(this, ProgressDialogActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleWebView() {
+        binding.webViewBtn.setOnClickListener(view -> {
+            intent = new Intent(this, WebViewActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleSpinner() {
+        binding.spinnerSpBtn.setOnClickListener(view -> {
+            intent = new Intent(this, SpinnerActivity.class);
             startActivity(intent);
         });
     }
