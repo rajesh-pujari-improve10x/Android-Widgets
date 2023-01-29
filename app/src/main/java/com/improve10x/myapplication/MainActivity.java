@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         handleWebView();
         handleSpinner();
         handleCustomAlertDialog();
+        handleSearchView();
+        handleTextWatcher();
     }
 
     private void handleAddition() {
@@ -176,6 +178,20 @@ public class MainActivity extends AppCompatActivity {
     private void handleCustomAlertDialog() {
         binding.customAlertDialogBtn.setOnClickListener(view -> {
             intent = new Intent(this, CustomAlertDialogActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleSearchView() {
+        binding.searchViewBtn.setOnClickListener(view -> {
+            intent = new Intent(this, SearchViewActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleTextWatcher() {
+        binding.textWatcherBtn.setOnClickListener(view -> {
+            intent = new Intent(this, TextWatcherActivity.class);
             startActivity(intent);
         });
     }
