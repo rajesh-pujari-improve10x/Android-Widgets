@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         handleSearchView();
         handleTextWatcher();
         handleSearchViewToolBar();
+        handleAutoCompleteTextView();
     }
 
     private void handleAddition() {
@@ -200,6 +201,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleSearchViewToolBar() {
         binding.searchViewToolBarBtn.setOnClickListener(view -> {
             intent = new Intent(this, SearchViewToolBarActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleAutoCompleteTextView() {
+        binding.autoCompleteTextViewBtn.setOnClickListener(view -> {
+            intent = new Intent(this, AutoCompleteTextViewActivity.class);
             startActivity(intent);
         });
     }
