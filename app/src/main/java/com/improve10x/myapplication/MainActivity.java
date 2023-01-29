@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         handleCustomAlertDialog();
         handleSearchView();
         handleTextWatcher();
+        handleSearchViewToolBar();
     }
 
     private void handleAddition() {
@@ -192,6 +193,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleTextWatcher() {
         binding.textWatcherBtn.setOnClickListener(view -> {
             intent = new Intent(this, TextWatcherActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleSearchViewToolBar() {
+        binding.searchViewToolBarBtn.setOnClickListener(view -> {
+            intent = new Intent(this, SearchViewToolBarActivity.class);
             startActivity(intent);
         });
     }

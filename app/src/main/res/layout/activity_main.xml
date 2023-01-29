@@ -162,6 +162,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Text Watcher" />
+
+            <Button
+                android:id="@+id/search_view_tool_bar_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SearchView ToolBar" />
         </LinearLayout>
     </ScrollView>
 
