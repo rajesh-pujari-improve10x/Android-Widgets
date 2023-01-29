@@ -42,7 +42,9 @@ public class MainActivity extends AppCompatActivity {
         handleTextWatcher();
         handleSearchViewToolBar();
         handleAutoCompleteTextView();
+        handleMultiAutoCompleteTextView();
     }
+
 
     private void handleAddition() {
         binding.additionBtn.setOnClickListener(view -> {
@@ -208,6 +210,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleAutoCompleteTextView() {
         binding.autoCompleteTextViewBtn.setOnClickListener(view -> {
             intent = new Intent(this, AutoCompleteTextViewActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleMultiAutoCompleteTextView() {
+        binding.multiAutoCompleteTextViewBtn.setOnClickListener(view -> {
+            intent = new Intent(this, MultiAutoCompleteTextViewActivity.class);
             startActivity(intent);
         });
     }
